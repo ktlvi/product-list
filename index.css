@@ -1,0 +1,415 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "Roboto", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header Styles */
+.header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Product List Styles */
+.product-list {
+    margin-top: 2rem;
+}
+
+.product-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(200px, 1fr)
+    ); /* Smaller minimum width */
+    gap: 1rem; /* Reduce spacing between cards */
+}
+
+/* Product Card Styles */
+.product-card {
+    background: white;
+    border-radius: 8px; /* Slightly smaller corners */
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-3px); /* Slightly smaller hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Maintain square aspect ratio */
+    border-bottom: 1px solid #eaeaea;
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Product Card Content */
+.product-card-content {
+    padding: 0.75rem; /* Reduce padding */
+}
+
+.product-name {
+    font-size: 1rem; /* Smaller font size */
+    font-weight: 600;
+    margin-bottom: 0.25rem; /* Reduce spacing */
+}
+
+.product-count {
+    font-size: 0.875rem; /* Smaller font size */
+    color: #6c757d;
+    margin-bottom: 0.5rem; /* Reduce spacing */
+}
+
+/* Product Card Actions */
+.product-card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem; /* Reduce spacing */
+}
+
+.product-card-actions .btn {
+    padding: 0.25rem 0.5rem; /* Smaller padding */
+    font-size: 0.875rem; /* Smaller font size */
+    border-radius: 4px; /* Slightly smaller corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product-card-actions .btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.product-card-actions .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.product-card-actions .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+}
+
+.product-card-actions .btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Product Details */
+.product-details {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.product-header h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-info {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.product-details-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+}
+
+.product-meta {
+    font-size: 1rem;
+    color: #555;
+}
+
+.product-meta p {
+    margin: 0.5rem 0;
+}
+
+.product-meta strong {
+    color: #333;
+}
+
+/* Comments Section */
+.comments-section {
+    margin-top: 2rem;
+}
+
+.comments-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.comment-item {
+    background: #f9f9fb;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.comment-date {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary {
+    background-color: #4a90e2;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #3a7bd5;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+    transform: translateY(-2px);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9fb;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better focus */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-in-out; /* Smooth fade-in animation */
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px; /* Softer corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    text-align: center;
+    max-width: 450px;
+    width: 100%;
+    animation: slideIn 0.3s ease-in-out; /* Smooth slide-in animation */
+}
+
+/* Modal Header */
+.modal-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Modal Message */
+.modal-content p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Modal Footer */
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem; /* Add spacing between buttons */
+    margin-top: 1.5rem;
+}
+
+.modal-footer .btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px);
+}
+
+.modal-footer .btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.modal-footer .btn-danger:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Sort Dropdown */
+.sort-dropdown {
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    background-color: white;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.sort-dropdown:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+/* Loading and Error Messages */
+.loading,
+.error-message {
+    text-align: center;
+    margin-top: 2px;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-weight: 500;
+}

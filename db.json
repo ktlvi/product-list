@@ -1,0 +1,215 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "imageUrl": "https://shmector.com/_ph/2/53928569.png",
+      "name": "Laptop",
+      "count": 10,
+      "size": {
+        "width": 2000,
+        "height": 2000
+      },
+      "weight": "2000g",
+      "comments": [
+        {
+          "id": "a1b2c3d4-e5f6-7890-abcd-1234567890ab",
+          "productId": "1",
+          "description": "Great laptop for work and gaming!",
+          "date": "03/05/2025 09:15"
+        },
+        {
+          "id": "b2c3d4e5-f6a7-8901-bcde-2345678901bc",
+          "productId": "1",
+          "description": "Battery life could be better.",
+          "date": "03/05/2025 12:30"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "imageUrl": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg",
+      "name": "Smartphone",
+      "count": 15,
+      "size": {
+        "width": 75,
+        "height": 150
+      },
+      "weight": "180g",
+      "comments": [
+        {
+          "id": "c3d4e5f6-a7b8-9012-cdef-3456789012cd",
+          "productId": "2",
+          "description": "Amazing camera quality!",
+          "date": "03/05/2025 14:45"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "imageUrl": "https://images.pexels.com/photos/15840650/pexels-photo-15840650/free-photo-of-black-wireless-headphones.jpeg",
+      "name": "Headphones",
+      "count": 8,
+      "size": {
+        "width": 100,
+        "height": 100
+      },
+      "weight": "300g",
+      "comments": [
+        {
+          "id": "7b8b4be0-a8d9-493c-89cb-da195e7dd2cb",
+          "productId": "3",
+          "description": "The best headphones!!!",
+          "date": "03/05/2025 17:34"
+        },
+        {
+          "id": "d4e5f6a7-b8c9-0123-def0-4567890123de",
+          "productId": "3",
+          "description": "Comfortable for long use.",
+          "date": "03/05/2025 18:20"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "imageUrl": "https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg",
+      "name": "Smartwatch",
+      "count": 12,
+      "size": {
+        "width": 40,
+        "height": 40
+      },
+      "weight": "50g",
+      "comments": []
+    },
+    {
+      "id": "5",
+      "imageUrl": "https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg",
+      "name": "Tablet",
+      "count": 7,
+      "size": {
+        "width": 180,
+        "height": 250
+      },
+      "weight": "400g",
+      "comments": [
+        {
+          "id": "e5f6a7b8-c9d0-1234-ef01-5678901234ef",
+          "productId": "5",
+          "description": "Perfect for reading and browsing.",
+          "date": "03/05/2025 10:00"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "imageUrl": "https://images.pexels.com/photos/214487/pexels-photo-214487.jpeg",
+      "name": "Wireless Mouse",
+      "count": 20,
+      "size": {
+        "width": 60,
+        "height": 100
+      },
+      "weight": "80g",
+      "comments": [
+        {
+          "id": "f6a7b8c9-d0e1-2345-f012-6789012345f0",
+          "productId": "6",
+          "description": "Smooth and responsive.",
+          "date": "03/05/2025 11:25"
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "imageUrl": "https://images.pexels.com/photos/4709286/pexels-photo-4709286.jpeg",
+      "name": "Keyboard",
+      "count": 9,
+      "size": {
+        "width": 400,
+        "height": 150
+      },
+      "weight": "600g",
+      "comments": []
+    },
+    {
+      "id": "8",
+      "imageUrl": "https://images.pexels.com/photos/797793/pexels-photo-797793.jpeg",
+      "name": "Portable Speaker",
+      "count": 14,
+      "size": {
+        "width": 80,
+        "height": 80
+      },
+      "weight": "250g",
+      "comments": [
+        {
+          "id": "a7b8c9d0-e1f2-3456-0123-7890123456a1",
+          "productId": "8",
+          "description": "Great sound for its size!",
+          "date": "03/05/2025 13:50"
+        },
+        {
+          "id": "b8c9d0e1-f2a3-4567-1234-8901234567b2",
+          "productId": "8",
+          "description": "Battery lasts all day.",
+          "date": "03/05/2025 15:10"
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "imageUrl": "https://images.pexels.com/photos/3945674/pexels-photo-3945674.jpeg",
+      "name": "External Hard Drive",
+      "count": 5,
+      "size": {
+        "width": 120,
+        "height": 80
+      },
+      "weight": "200g",
+      "comments": []
+    },
+    {
+      "id": "10",
+      "imageUrl": "https://images.pexels.com/photos/821651/pexels-photo-821651.jpeg",
+      "name": "Webcam",
+      "count": 11,
+      "size": {
+        "width": 50,
+        "height": 50
+      },
+      "weight": "100g",
+      "comments": [
+        {
+          "id": "c9d0e1f2-a3b4-5678-2345-9012345678c3",
+          "productId": "10",
+          "description": "Clear video for calls.",
+          "date": "03/05/2025 16:40"
+        }
+      ]
+    },
+    {
+      "id": "a5d963a6-b9af-481f-bbe4-585f582c3856",
+      "name": "Smartphone",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0e/DefaultImage.png",
+      "count": "999",
+      "size": {
+        "width": "1000",
+        "height": "1000"
+      },
+      "weight": "500kg",
+      "comments": []
+    },
+    {
+      "id": "b698bb8d-01a0-408d-a886-83275dda8089",
+      "name": "Smartphone",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Snap_on_smartphone.jpg",
+      "count": 100,
+      "size": {
+        "width": 15,
+        "height": 10
+      },
+      "weight": "500kg",
+      "comments": []
+    }
+  ]
+}
