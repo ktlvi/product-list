@@ -31,7 +31,7 @@ A **React** application that simulates a product shop with full **CRUD** functio
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/product-shop-app.git
+git clone https://github.com/ktlvi/product-shop-app.git
 cd product-shop-app
 ```
 
